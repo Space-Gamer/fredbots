@@ -117,11 +117,7 @@ def fetch_packages():
     global packages, package_number
     path = os.path.dirname(os.path.abspath(__file__))
     try:
-<<<<<<< HEAD
-        file = open("/home/rohan/catkin_ws/src/fredbots/src/scripts/package.txt", "r")
-=======
         file = open(path + "/packages/package.txt", "r")
->>>>>>> a7e5da36a4df3b5fd8b446e5e5ea8e00bf9e44c9
         lines = file.readlines()
         for line in lines:
             package_number += 1

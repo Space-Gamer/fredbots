@@ -101,6 +101,8 @@
   <node name="atom_move_robot3" pkg="fredbots" type="ql_bot_3.py" />
   <node name="atom_move_robot4" pkg="fredbots" type="ql_bot_4.py" />
 
+  <node name="interactive_task_scheduler" pkg="fredbots" type="package_assigner.py" />
+
   <!-- Launch RViz with the provided configuration -->
   <!-- <node name="rviz" pkg="rviz" type="rviz" args="-d $(arg rviz_config)" /> -->
 
