@@ -41,6 +41,15 @@ y1 = 0
 z1 = 0
 theta1 = 0
 
+def construct_reward_matrix(goal_x, goal_y, obstacles=obstacles):
+    rewards = np.full((env_row, env_col), -1)
+    for obstacle in obstacles:
+        try:
+            rewards[obstacle[0]][obstacle[1]] = -100 #remove the reward for any actions that lead to the obstacle
+        except IndexError:
+            continue
+    rewards[goal_x][goal_y] = 100
+    return rewards
 
 def construct_reward_matrix(goal_x, goal_y, obstacles=obstacles):
     rewards = np.full((env_row, env_col), -1)

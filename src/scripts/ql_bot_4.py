@@ -44,7 +44,6 @@ y1 = 0
 z1 = 0
 theta1 = 0
 
-
 def construct_reward_matrix(goal_x, goal_y, obstacles=obstacles):
     rewards = np.full((env_row, env_col), -1)
     for obstacle in obstacles:
