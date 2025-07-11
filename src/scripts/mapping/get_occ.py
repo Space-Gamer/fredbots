@@ -10,7 +10,7 @@ import imageio
 rospy.init_node('occupancy_metadata_grid_publisher', anonymous=True)
 
 # Load map data from the YAML file
-with open('/home/rohan/catkin_ws/src/fredbots/maps/mymap.yaml', 'r') as f:
+with open('src/fredbots/maps/mymap.yaml', 'r') as f:
     yaml_data = yaml.load(f, Loader=yaml.FullLoader)
 
 def publish_map_metadata():
@@ -70,7 +70,7 @@ def publish_map_metadata():
 #     occupancy_grid_msg = OccupancyGrid()
 
 #     # Load map data from the PGM file
-#     with open('/home/rohan/catkin_ws/src/fredbots/maps/mymap.pgm', 'r') as f:
+#     with open('src/fredbots/maps/mymap.pgm', 'r') as f:
 #         map_data = f.read()
 
 #     # Set occupancy grid attributes
@@ -147,8 +147,8 @@ if __name__ == '__main__':
     print("\n*************\n")
     #publish_map_meta(map_meta)
 
-    pgm_file_path = '/home/rohan/catkin_ws/src/fredbots/maps/mymap.pgm'
-    yaml_file_path = '/home/rohan/catkin_ws/src/fredbots/maps/mymap.yaml'
+    pgm_file_path = 'src/fredbots/maps/mymap.pgm'
+    yaml_file_path = 'src/fredbots/maps/mymap.yaml'
 
     map_data, map_metadata = read_map_files(pgm_file_path, yaml_file_path)
 
