@@ -20,6 +20,11 @@ By integrating Q-learning with ROS in a simulated Gazebo environment, FRedBots s
 
 > 🧠 In short, FRedBots presents a modular, scalable, and intelligent approach to warehouse automation using model-free reinforcement learning.
 
+## Publication
+
+This project was presented in the **ICCCR 2025: 5th International Conference on Computer, Control and Robotics**.  
+[Read the paper here](https://doi.org/10.1109/ICCCR65461.2025.11072598)
+
 ## Authors
 
 1. [Pradeep J](https://github.com/Space-Gamer)
